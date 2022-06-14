@@ -1,5 +1,4 @@
 name: 'CI Test'
-description: 'Test run in Github Actions'
 on: push
 
 jobs:
