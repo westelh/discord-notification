@@ -43,7 +43,7 @@ jobs:
           docker image ls -a
 
       - name: Run
-        run: docker run -e APIPATH=${{secrets.APIPATH}} -e HOSTNAME=Actions ghcr.io/westelh/discord-notification:test "CI Test Run Succeeded!"
+        run: docker run -e APIPATH=${{secrets.APIPATH}} -e HOSTNAME=Actions ghcr.io/westelh/discord-notification:test "CI Test Run Succeeded! (${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
 
   
 
