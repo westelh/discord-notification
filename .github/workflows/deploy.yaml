@@ -5,6 +5,8 @@ on:
       - main
     tags:
       - '**'
+permissions:
+  packages: write
 
 jobs:
   deploy:
@@ -28,5 +30,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/westelh/discord-notification:test
+          tags: ghcr.io/westelh/discord-notification:latest
 
