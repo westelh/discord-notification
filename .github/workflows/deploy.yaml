@@ -5,12 +5,14 @@ on:
       - main
     tags:
       - '**'
-permissions:
-  packages: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissons:
+      contents: read
+      packages: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
